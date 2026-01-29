@@ -26,14 +26,6 @@ comment-lines|60|
 comment-characters|1181|
 
 <p align="center">
-  <img src="https://img.shields.io/github/stars/BEMYDRE4M/Redfield-Apocalypse.svg" alt="GitHub stars">
-  <img src="https://img.shields.io/github/forks/BEMYDRE4M/Redfield-Apocalypse.svg" alt="GitHub forks">
-  <img src="https://img.shields.io/github/release-date/BEMYDRE4M/Redfield-Apocalypse.svg" alt="Release date">
-  <img src="https://img.shields.io/github/v/release/BEMYDRE4M/Redfield-Apocalypse?style=flat-square" alt="Latest Release">
-  <img src="https://img.shields.io/github/downloads/BEMYDRE4M/Redfield-Apocalypse/total.svg" alt="Total Downloads">
-</p>
-
-<p align="center">
   <img src="Screenshots/1.png" width="350">
   <img src="Screenshots/2.png" width="350">
   <img src="Screenshots/3.png" width="350">   
