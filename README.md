@@ -1,6 +1,6 @@
 # Redfield Apocalypse
 
-**Redfield Apocalypse** is a Zombie Apocalypse game mode for **Multi Theft Auto**, originally developed in 2018 and 2019. After several years of being unavailable, it is now being re-released.  
+**Redfield Apocalypse** is a Zombie Apocalypse game mode, originally developed in 2018 and 2019. After several years of being unavailable, it is now being re-released.  
 
 In this gamemode, you face hordes of zombies, survive, and grow stronger. Here’s what you can do:  
 
