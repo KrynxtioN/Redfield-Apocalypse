@@ -12,9 +12,6 @@ In this gamemode, you face hordes of zombies, survive, and grow stronger. Hereâ€
 - **Safe zones:** Recharge and plan your strategy in areas protected from zombies.  
 - **Premium benefits:** Activate Premium status to enjoy extra perks and advantages in the game.  
 
-
-Installation: Upload the database and enter the data in the sMain.lua file.
-
 |Category|Amount|
 |---|---|
 LUA files|55|
