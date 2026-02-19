@@ -40,7 +40,6 @@ function RegisterLogin.setDatasAfterLogin(player)
 	setElementData(player,"dangercount",0)
 	setElementData(player,"alreadyspawned",true)
 	triggerClientEvent(player,"setWindowDatas",player,"reset")
-	triggerClientEvent(player,"RegisterLogin.destroySound",player)
 	setPlayerAchievement(player,1)
 	if(getElementData(player,"Team") >= 1)then
 		setElementData(player,"Teamname",getPlayerData("teams","ID",getElementData(player,"Team"),"Name"))

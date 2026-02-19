@@ -96,8 +96,6 @@
 	
 	<file src = "Files/Shader/Blur.fx"/>
 	
-	<file src = "Files/RegisterLogin.mp3"/>
-	
 	<file src = "Files/Fonts/Font.ttf"/>
 
 	<script src = "Maps/sMaps.lua"/>

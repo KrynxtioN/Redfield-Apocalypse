@@ -10,8 +10,6 @@ function RegisterLogin.load()
 	setCameraMatrix (-2005.4229736328,193.98599243164,46.244598388672,-2004.8247070313,193.29585266113,45.837471008301)
 	smoothMoveCamera(-2005.4229736328,193.98599243164,46.244598388672,-2004.8247070313,193.29585266113,45.837471008301,-1992.9862060547,137.99920654297,33.469501495361,-1992.0090332031,137.99261474609,33.257274627686,7500)
 	
-	RegisterLogin.sound = playSound("Files/RegisterLogin.mp3")
-	
 	triggerServerEvent("RegisterLogin.checkAccount",localPlayer)
 end
 RegisterLogin.load()
@@ -41,11 +39,4 @@ addEventHandler("RegisterLogin.createWindow",root,function(type)
 			triggerServerEvent("RegisterLogin.server",localPlayer,guiGetText(ApocalypseUI.button[1]),password)
 		end
 	end,false)
-end)
-
-addEvent("RegisterLogin.destroySound",true)
-addEventHandler("RegisterLogin.destroySound",root,function()
-	if(isElement(RegisterLogin.sound))then
-		destroyElement(RegisterLogin.sound)
-	end
 end)
