@@ -22,6 +22,9 @@ characters|167873|
 comment-lines|60|
 comment-characters|1181|
 
+### Gameplay and Screenshots
+* https://youtu.be/lZjxwyfTO1A
+
 <p align="center">
   <img src="Screenshots/1.png" width="350">
   <img src="Screenshots/2.png" width="350">
