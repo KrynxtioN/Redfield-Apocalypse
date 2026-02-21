@@ -1,8 +1,6 @@
 # Redfield Apocalypse
 
-**Redfield Apocalypse** is a Zombie Apocalypse game mode, originally developed in 2018 and 2019.
-
-In this gamemode, you face hordes of zombies, survive, and grow stronger. Here’s what you can do:  
+Redfield Apocalypse is a Zombie Apocalypse game mode, originally developed in 2018 and 2019. In this gamemode, you face hordes of zombies, survive, and grow stronger. Here’s what you can do:  
 
 - **Fight and survive:** Kill zombies to earn experience, money, and other rewards.  
 - **Level up and progress:** Gain experience to unlock new weapons, features, and abilities.  
