@@ -166,16 +166,6 @@ Redfield Apocalypse includes several additional systems beyond the main zombie s
   <img src="Screenshots/9.png" width="350">
   <img src="Screenshots/10.png" width="350">
   <img src="Screenshots/11.png" width="350">   
-  <img src="Screenshots/12.png" width="350">
-  <img src="Screenshots/13.png" width="350">
-  <img src="Screenshots/14.png" width="350">   
-  <img src="Screenshots/15.png" width="350">
-  <img src="Screenshots/16.png" width="350">
-  <img src="Screenshots/17.png" width="350">
-  <img src="Screenshots/18.png" width="350">
-  <img src="Screenshots/19.png" width="350">   
-  <img src="Screenshots/20.png" width="350">
-  <img src="Screenshots/21.png" width="350">
 </p>
 
 ## 📊 Statistics
