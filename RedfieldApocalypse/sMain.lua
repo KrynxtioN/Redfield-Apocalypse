@@ -223,3 +223,11 @@ addEventHandler("onElementClicked",root,function(button,state,player)
 		end
 	end
 end)
+
+addEventHandler("onPlayerJoin", root, function()
+    local playerName = getPlayerName(source)
+
+    if string.lower(playerName) == "none" then
+        kickPlayer(source, "Server", "The name 'None' is not allowed. Please change your name and reconnect.")
+    end
+end)
