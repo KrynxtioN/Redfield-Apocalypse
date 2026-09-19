@@ -51,8 +51,22 @@ addEventHandler("onClientRender",root,function()
 						
 						if(worldx and worldy)then
 							if(getElementData(localPlayer,"elementClicked") ~= true)then
-								dxDrawText(getElementData(v,"PedName"),worldx,worldy,worldx,worldy,tocolor(0,255,0),scale,"bankgothic","center","center")
-								dxDrawText("Click to interact.",worldx-2,worldy+25,worldx,worldy,tocolor(0,255,0),scale - 0.2,"bankgothic","center","center")
+								dxDrawText(getElementData(v,"PedName"),worldx-2,worldy,worldx-2,worldy,tocolor(0,0,0,255),scale,"bankgothic","center","center")
+								dxDrawText(getElementData(v,"PedName"),worldx+2,worldy,worldx+2,worldy,tocolor(0,0,0,255),scale,"bankgothic","center","center")
+								dxDrawText(getElementData(v,"PedName"),worldx,worldy-2,worldx,worldy-2,tocolor(0,0,0,255),scale,"bankgothic","center","center")
+								dxDrawText(getElementData(v,"PedName"),worldx,worldy+2,worldx,worldy+2,tocolor(0,0,0,255),scale,"bankgothic","center","center")
+								
+								-- Name
+								dxDrawText(getElementData(v,"PedName"),worldx,worldy,worldx,worldy,tocolor(0,255,0,255),scale,"bankgothic","center","center")
+								
+								-- Schwarze Outline Beschreibung
+								dxDrawText("Click to interact.",worldx-4,worldy+25,worldx-2,worldy,tocolor(0,0,0,255),scale-0.2,"bankgothic","center","center")
+								dxDrawText("Click to interact.",worldx,worldy+25,worldx+2,worldy,tocolor(0,0,0,255),scale-0.2,"bankgothic","center","center")
+								dxDrawText("Click to interact.",worldx-2,worldy+23,worldx,worldy-2,tocolor(0,0,0,255),scale-0.2,"bankgothic","center","center")
+								dxDrawText("Click to interact.",worldx-2,worldy+27,worldx,worldy+2,tocolor(0,0,0,255),scale-0.2,"bankgothic","center","center")
+								
+								-- Beschreibung
+								dxDrawText("Click to interact.",worldx-2,worldy+25,worldx,worldy,tocolor(0,255,0,255),scale-0.2,"bankgothic","center","center")
 							end
 						end
 					end

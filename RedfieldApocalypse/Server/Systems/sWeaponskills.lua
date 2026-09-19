@@ -22,7 +22,7 @@ Weaponskills = {
 		{"Spas12",74},
 		{"Uzi",75},
 		{"Mp5",76},
-		{"AK47",77},
+		{"AK-47",77},
 		{"M4",78},
 		{"Rifle",79},
 	},
@@ -41,7 +41,7 @@ function Weaponskills.setPedStat(player)
 	for _,v in pairs(Weaponskills["Datas"])do
 		local stats = getPlayerData("weaponskills","Username",getPlayerName(player),v[1])
 		setElementData(player,v[1],stats)
-		setPedStat(player,v[2],getElementData(player,v[1]))
+		setPedStat(player,v[2],tonumber(getElementData(player,v[1])))
 	end
 end
 

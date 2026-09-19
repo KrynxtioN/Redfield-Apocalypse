@@ -6,9 +6,11 @@ function Houses.load()
 		for _,v in pairs(result)do
 			if(not(isElement(Houses[v["ID"]])))then
 				if(v["Owner"] == "Niemand")then model = 1273 else model = 1272 end
-				Houses[v["ID"]] = createPickup(v["Spawnx"],v["Spawny"],v["Spawnz"],3,model,50)
+				Houses[v["ID"]] = createPickup(v["SpawnX"],v["SpawnY"],v["SpawnZ"],3,model,50)
 				if(model == 1273)then
-					Houses.blips[v["ID"]] = createBlip(v["Spawnx"],v["Spawny"],v["Spawnz"],32,0,0,0,0,0,0,100)
+					Houses.blips[v["ID"]] = createBlip(v["SpawnX"],v["SpawnY"],v["SpawnZ"],31,0,0,0,0,0,0,100)
+				elseif(model == 1272)then
+					Houses.blips[v["ID"]] = createBlip(v["SpawnX"],v["SpawnY"],v["SpawnZ"],32,0,0,0,0,0,0,100)
 				end
 				setElementData(Houses[v["ID"]],"Owner",v["Owner"])
 				setElementData(Houses[v["ID"]],"Price",v["Price"])

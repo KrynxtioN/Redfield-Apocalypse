@@ -5,7 +5,7 @@ createBlip(-2532.0510253906,-624.38592529297,132.74740600586,25,0,0,0,0,0,0,100,
 	
 Main = {}
 
-handler = dbConnect("mysql","dbname=redfieldapocalypse;host=localhost","root","")
+handler = dbConnect("mysql","dbname=redfieldapocalypse;host=host","user","password")
 Serverinfos = {name = "Redfield Apocalypse", version = "v.1.1.0"}
 
 setFPSLimit(65)

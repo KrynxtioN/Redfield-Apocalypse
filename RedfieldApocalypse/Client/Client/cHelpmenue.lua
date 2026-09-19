@@ -1,21 +1,61 @@
 Helpmenue = {
 	["Categorys"] = {"Clicksystem","Bonuspoints","Protection Zones","Weapon Stores","Zombies","Levelsystem","Team","Premium","Achievements","Vehicles","Commands","Houses"},
 	["Texts"] = {
-		["Clicksystem"] = "With the key 'M' you can switch the cursor on and off again. You can use the cursor to click on Peds.",
-		["Bonuspoints"] = "If you eliminate a zombie, there is the possibility (1:10) that he drop a bonuspoint. You can collect them and spent them on skins an Coins. How many bonuspoints you already have, you can see in your inventory under 'I'.",
-		["Protection Zones"] = "The green zones visible on the map and radar are protected areas where you are safe from the onslaught of zombies. In addition, there are vehicles and a weapons shop in all protected areas. In the main protection zone at the station are still several Peds, where one finds information and shops.",
-		["Weapon Stores"] = "In each protection zone there is a weapon shop with a large selection of weapons. However, one does not have direct access to all weapons. When certain levels are reached, more weapons are unlocked.",
-		["Zombies"] = "Near a player can spawn up to 100 zombies, which should be killed if you do not want to die. By killing a zombie you get 25$ and five experience points.",
-		["Levelsystem"] = "By Killing a zombie you get five experience points. As soon as you have gained enough experience points, you get a higher level. How many experience points you currently have and how many you still need to the next level, you can see in the top right of your HUD. You need your own level + 1 (*250) experience points for a level up.",
-		["Team"] = "In the main protection zone at the station, you have the opportunity to create your own team for 50.000$, which gives you some advantages. With a team you have the opportunity to buy his a small base as well as team vehicles. In addition, you get two experience points when a teammate shoots a zombie nearby.",
-		["Premium"] = "Premium can be purchased in our Coinshop. With an active premium-status you will get the following benefits:\n\n- You get 10 instead 5 experience points for killing a zombie.\n- You get 50$ instead 25$ for killing a zombie.\n-Every full hour you get a payday, where you get money and experience points. There's also a little chance that you getting a coin.\n- Each weapon you collect has twice that amount of ammo.\n- Your weapons will be saved, when you leave the server.\n- You skill your weapons faster.\n- Teleport to other savezones.",
-		["Achievements"] = "Under F3 you can open the Achievement-Panel, where you find all available achievements and there tasks. For each achievement you get a trophy, which gives you 25 experience points on your payday.",
-		["Vehicles"] = "/lock - Lock / unlock your vehicle\n/park - Park your vehicle\nF5 - All your vehicles",
-		["Commands"] = "/pay - Give money to another player\n/news - News (if there are available news)",
-		["Houses"] = "The red houses on the map are buyable houses. If your team owns a house, you spawn at it. With a sale you get back 75% of the purchase price.",
-		["Safes"] = "At the dice on the map you can open safes if you have a key. There's a 1 in 100 chance that a key will drop when you kill a zombie.",
+		["Clicksystem"] = "Press 'M' to toggle your cursor on or off. You can use the cursor to interact with NPCs and other clickable elements.",
+		["Bonuspoints"] = "When you kill a zombie, there is a 1 in 10 chance that it will drop a bonus point. Bonus points can be collected and spent on skins and coins. You can check your current bonus points in your inventory by pressing 'I'.",
+		["Protection Zones"] = "The green zones shown on the map and radar are protected areas where you are safe from zombies. Each protection zone provides access to vehicles and a weapon shop. The main protection zone at the station also contains several NPCs that provide information and access to additional shops.",
+		["Weapon Stores"] = "Each protection zone has a weapon shop offering a variety of weapons. Not all weapons are available from the beginning. Additional weapons are unlocked as you reach higher levels.",
+		["Zombies"] = "Up to 100 zombies can spawn near a player. Killing a zombie rewards you with $25 and 5 experience points. Be careful not to get overwhelmed by large groups of zombies.",
+		["Levelsystem"] = "Killing a zombie rewards you with 5 experience points. Once you have earned enough experience, you will level up. Your current experience and the amount required for your next level are displayed in the top-right corner of your HUD. The experience required for a level up is calculated as (your current level + 1) × 250.",
+		["Team"] = "You can create your own team for $50,000 in the main protection zone at the station. Being part of a team provides several benefits, including the ability to purchase a team base and team vehicles. You also receive 2 experience points whenever a nearby teammate kills a zombie.",
+		["Premium"] = "Premium can be purchased from the Coin Shop. While Premium is active, you receive the following benefits:\n\n- 10 experience points instead of 5 for killing a zombie.\n- $50 instead of $25 for killing a zombie.\n- A payday every full hour, rewarding you with money and experience points, with a small chance of receiving a coin.\n- Weapons you collect contain twice as much ammunition.\n- Your weapons are saved when you leave the server.\n- Your weapon skills increase faster.\n- You can teleport to other protection zones.",
+		["Achievements"] = "Press 'F3' to open the Achievement Panel, where you can view all available achievements and their requirements. Each completed achievement rewards you with a trophy. Every trophy grants you an additional 25 experience points during your payday.",
+		["Vehicles"] = "You can purchase vehicles from dealerships located throughout the map. Dealerships are marked with a vehicle icon on the map. Once you have purchased a vehicle, you can manage it through the vehicle menu by pressing 'F5'.\n\n/lock - Lock or unlock your vehicle\n/park - Save your vehicle's current parking position\nF5 - Open your vehicle list",
+		["Commands"] = "/pay - Give money to another player\n/news - View the latest available news\n/admins - View all admins currently online\n/admincommands - View the commands available for your admin rank (admins only)",
+		["Houses"] = "Green house icons on the map indicate properties that can be purchased. If your team owns a house, you can spawn there. When selling a house, you receive 75% of its original purchase price.",
+		["Safes"] = "Safes are marked with a dice icon on the map and can be opened if you have a key. Every zombie you kill has a 1 in 100 chance of dropping a safe key.",
 	},
 }
+
+local pickupPosition = Vector3(-1979.94140625, 137.90785217285, 27.6875)
+local helpPickup = createPickup(pickupPosition.x, pickupPosition.y, pickupPosition.z, 3, 1239)
+local maxDistance = 20
+local helpText = "For help open the F1 menu."
+
+addEventHandler("onClientRender", root, function()
+	if(isWindowOpen())
+		if not isElement(helpPickup) then return end
+
+		local playerPosition = Vector3(getElementPosition(localPlayer))
+		local distance = getDistanceBetweenPoints3D(
+			playerPosition.x, playerPosition.y, playerPosition.z,
+			pickupPosition.x, pickupPosition.y, pickupPosition.z
+		)
+
+		if distance > maxDistance then return end
+
+		local screenX, screenY = getScreenFromWorldPosition(
+			pickupPosition.x,
+			pickupPosition.y,
+			pickupPosition.z + 1
+		)
+
+		if not screenX or not screenY then return end
+
+		local alpha = 255 * (1 - distance / maxDistance)
+
+		dxDrawText(
+			helpText,
+			screenX - 250, screenY - 20,
+			screenX + 250, screenY + 20,
+			tocolor(255, 255, 255, alpha),
+			1.2,
+			"default-bold",
+			"center", "center",
+			false, false, false, true
+		)
+	end
+end)
 
 bindKey("f1","down",function()
 	if(isWindowOpen())then
