@@ -80,7 +80,7 @@ addCommandHandler("createhouse",function(player,cmd,price)
 		if(price)then
 			if(getElementInterior(player) == 0 and getElementDimension(player) == 0 and isPedOnGround(player) and not(isPedInWater(player)))then
 				local x,y,z = getElementPosition(player)
-				dbExec(handler,"INSERT INTO houses (Spawnx,Spawny,Spawnz,Owner,Price) VALUES ('"..x.."','"..y.."','"..z.."','Niemand','"..price.."')")
+				dbExec(handler,"INSERT INTO houses (Spawnx,Spawny,Spawnz,Owner,Price) VALUES ('"..x.."','"..y.."','"..z.."','None','"..price.."')")
 				infobox(player,"House created.",0,255,0)
 				Houses.load()
 			else infobox(player,"You cant create a house here!",255,0,0)end
