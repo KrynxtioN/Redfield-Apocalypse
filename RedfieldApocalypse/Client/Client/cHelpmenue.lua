@@ -11,7 +11,7 @@ Helpmenue = {
 		["Premium"] = "Premium can be purchased from the Coin Shop. While Premium is active, you receive the following benefits:\n\n- 10 experience points instead of 5 for killing a zombie.\n- $50 instead of $25 for killing a zombie.\n- A payday every full hour, rewarding you with money and experience points, with a small chance of receiving a coin.\n- Weapons you collect contain twice as much ammunition.\n- Your weapons are saved when you leave the server.\n- Your weapon skills increase faster.\n- You can teleport to other protection zones.",
 		["Achievements"] = "Press 'F3' to open the Achievement Panel, where you can view all available achievements and their requirements. Each completed achievement rewards you with a trophy. Every trophy grants you an additional 25 experience points during your payday.",
 		["Vehicles"] = "You can purchase vehicles from dealerships located throughout the map. Dealerships are marked with a vehicle icon on the map. Once you have purchased a vehicle, you can manage it through the vehicle menu by pressing 'F5'.\n\n/lock - Lock or unlock your vehicle\n/park - Save your vehicle's current parking position\nF5 - Open your vehicle list",
-		["Commands"] = "/pay - Give money to another player\n/news - View the latest available news\n/admins - View all admins currently online\n/admincommands - View the commands available for your admin rank (admins only)",
+		["Commands"] = "/pay - Give money to another player\n/news - View the latest available news\n/admins - View all admins currently online\n/admincommands - View the commands available for your admin rank (admins only)\n/createhouse - Create a house pickup (admins only)",
 		["Houses"] = "Green house icons on the map indicate properties that can be purchased. If your team owns a house, you can spawn there. When selling a house, you receive 75% of its original purchase price.",
 		["Safes"] = "Safes are marked with a dice icon on the map and can be opened if you have a key. Every zombie you kill has a 1 in 100 chance of dropping a safe key.",
 	},
@@ -23,7 +23,7 @@ local maxDistance = 20
 local helpText = "For help open the F1 menu."
 
 addEventHandler("onClientRender", root, function()
-	if(isWindowOpen())
+	if(isWindowOpen())then
 		if not isElement(helpPickup) then return end
 
 		local playerPosition = Vector3(getElementPosition(localPlayer))
