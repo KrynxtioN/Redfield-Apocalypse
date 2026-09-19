@@ -5,7 +5,7 @@ function Houses.load()
 	if(#result >= 1)then
 		for _,v in pairs(result)do
 			if(not(isElement(Houses[v["ID"]])))then
-				if(v["Owner"] == "Niemand")then model = 1273 else model = 1272 end
+				if(v["Owner"] == "None")then model = 1273 else model = 1272 end
 				Houses[v["ID"]] = createPickup(v["SpawnX"],v["SpawnY"],v["SpawnZ"],3,model,50)
 				if(model == 1273)then
 					Houses.blips[v["ID"]] = createBlip(v["SpawnX"],v["SpawnY"],v["SpawnZ"],31,0,0,0,0,0,0,100)
