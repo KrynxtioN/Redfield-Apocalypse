@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="RA_BANNER.png">
-</p>
-
 Redfield Apocalypse is a zombie survival gamemode for Multi Theft Auto: San Andreas (MTA:SA).
 
 The gamemode combines zombie survival with persistent player progression, teams, houses, vehicles, achievements, weapons, an economy system and various additional gameplay systems.
