@@ -1,179 +1,256 @@
-Redfield Apocalypse is a zombie survival gamemode for Multi Theft Auto: San Andreas (MTA:SA).
+# Redfield Apocalypse
 
-The gamemode combines zombie survival with persistent player progression, teams, houses, vehicles, achievements, weapons, an economy system and various additional gameplay systems.
+**A feature-rich zombie survival gamemode for Multi Theft Auto: San Andreas (MTA:SA).**
 
-## 🧟 Zombie System
+Redfield Apocalypse is a zombie survival gamemode for **Multi Theft Auto: San Andreas**, featuring dynamic zombie encounters, persistent player progression and cooperative gameplay.
 
-Zombies spawn around players outside of protection zones and attack nearby survivors.
+The gamemode combines zombie combat, character progression, team management, property ownership, vehicles, an in-game economy, achievements and various additional survival systems into a multiplayer experience.
 
-Killing zombies rewards players with money and experience points. Zombies also have a chance to drop Bonus Points and Safe Keys, which can be used in other systems throughout the gamemode.
+---
 
-Premium players receive increased money and experience rewards for killing zombies.
+## ✨ Features
 
-## 🛡️ Protection Zones
+### 🧟 Zombie System
 
-Protection zones are safe areas where players are protected from zombies.
+Zombies spawn around players outside designated protection zones and automatically attack nearby survivors.
 
-Multiple protection zones are located throughout the map and contain important locations such as weapon shops and vehicles. The main protection zone also contains NPCs that provide access to additional shops and information.
+- Dynamic zombie spawning
+- Automatic zombie targeting and attacks
+- Money and experience rewards for zombie kills
+- Random Bonus Point and Safe Key drops
+- Increased rewards for Premium players
+- Additional experience rewards for nearby team members
 
-## 👤 Accounts & Progression
+### 🛡️ Protection Zones
 
-Redfield Apocalypse includes its own registration and login system with MySQL persistence.
+Protection zones provide safe areas where players can access important services without being attacked by zombies.
 
-Player progress is permanently stored, including:
+- Multiple protection zones throughout the map
+- Protection from zombie attacks
+- Weapon shops and vehicle access
+- NPCs offering shops and information
+- Premium protection zone teleportation
 
-* Money and Coins
-* Level and experience
-* Playtime
-* Zombie kills and deaths
-* Bonus Points
-* Hearts and Trophies
-* Safe Keys
-* Premium status
-* Team and team rank
-* Weapon skills
-* Zombie Skin
+### 👤 Accounts & Player Progression
 
-## ⭐ Level System
+- Account registration and login
+- Persistent MySQL player data
+- Level and experience system
+- Playtime tracking
+- Zombie kill and death statistics
+- Persistent player progression
 
-Players earn experience points by killing zombies and through other systems within the gamemode.
+### 🔫 Weapons & Weapon Skills
 
-The experience required for the next level increases as the player progresses. Higher levels are also required to purchase stronger weapons from the weapon shops.
+- Level-based weapon purchasing
+- Weapon shops in protection zones
+- Persistent weapon skills
+- Weapon skill progression through combat
 
-Players can additionally receive experience when killing zombies together with nearby team members.
+### 💰 Economy & Coins
 
-## 🔫 Weapons & Weapon Skills
+- Money rewards through gameplay
+- Bonus Points earned from zombies
+- Bonus Point to Coin exchange
+- Coin Shop for special purchases
+- Skin Shop for character customization
+- Premium payday system
 
-Weapon shops are located inside the protection zones and offer different weapons depending on the player's level.
+### 🎒 Inventory & Items
 
-Redfield Apocalypse also includes persistent weapon skills. Weapon skills increase while using the corresponding weapons and are saved together with the player's progress.
+The inventory can be accessed by pressing **I** and allows players to manage their collected items and currencies.
 
-## 💰 Economy & Coins
+- Bonus Points
+- Chests
+- Hearts
+- Coins
+- Trophies
+- Zombie Skin
+- Safe Keys
+- Health restoration using Hearts
+- Zombie Skin activation and removal
 
-Players earn money through gameplay and can spend it on weapons, vehicles, teams and other systems.
+### 🔐 Safes
 
-The gamemode also includes Bonus Points and Coins. Bonus Points can be obtained from zombies and exchanged for Coins, while Coins are used for special purchases in the Coin Shop.
+- Safe Keys obtained from zombie drops
+- Safes located throughout the gamemode
+- Random weapon rewards
+- One Safe Key consumed per opening
 
-## 🎒 Inventory
-
-The inventory can be opened by pressing **I** and contains the player's collected items and currencies.
-
-The inventory includes Bonus Points, Chests, Hearts, Coins, Trophies, the Zombie Skin and Safe Keys. Hearts can be used to restore health, while the Zombie Skin can be equipped or removed directly through the inventory.
-
-## 🔐 Safes
-
-Safe Keys can occasionally be obtained by killing zombies.
-
-These keys can be used to open safes located throughout the gamemode. Opening a safe consumes one key and rewards the player with a random weapon.
-
-## 👥 Team System
+### 👥 Team System
 
 Players can create their own team for **$50,000** and manage it through the team panel.
 
-The team system includes member invitations, different ranks, member management and a team cash register. Team members can also benefit from additional systems such as shared vehicle access and team houses.
+- Team creation and management
+- Member invitations
+- Team ranks and permissions
+- Member management
+- Shared team cash register
+- Shared access to team members' vehicles
 
-## 🏠 Houses
+### 🏠 Housing & Properties
 
-Teams can purchase houses located throughout the map.
+- Purchasable team houses
+- Team-based property ownership
+- House spawn locations for team members
+- House resale with partial purchase price refunds
 
-Owned houses are connected to the team and can be used as a spawn location for its members. Houses can also be sold again, returning part of their original purchase price.
+### 🚗 Vehicles & Carhouse
 
-## 🚗 Vehicles & Carhouse
+- Persistent vehicle purchasing
+- Carhouse system
+- Vehicle management
+- Vehicle parking and locking
+- Vehicle location tracking
+- Vehicle selling
 
-Players can purchase persistent vehicles through the Carhouse.
+### 🏆 Achievements & Statistics
 
-Owned vehicles can be managed through the vehicle system, including parking, locking, locating and selling them. Team members can also use vehicles belonging to other members of their team.
+- Persistent achievement system
+- Zombie kill milestones
+- Weapon and vehicle-related achievements
+- Trophy rewards
+- Player Toplist
+- Rankings for levels, zombie kills, Bonus Points, Coins, Trophies and money
 
-## 🏆 Achievements
+### 💎 Premium System
 
-Redfield Apocalypse includes a persistent achievement system that rewards players for reaching different milestones.
+Premium is available through the Coin Shop in two variants:
 
-Achievements include objectives such as killing zombies, purchasing a weapon, using a vehicle and reaching larger zombie kill milestones. Completed achievements reward the player with Trophies.
+- 14 Days Premium
+- Lifetime Premium
 
-## 💎 Premium System
+Premium players receive additional benefits, including:
 
-Premium can be purchased through the Coin Shop as either **14 days of Premium** or **Lifetime Premium**.
+- Increased zombie kill rewards
+- Increased ammunition pickups
+- Faster weapon skill progression
+- Weapon saving functionality
+- Hourly payday based on player progression
 
-Premium players receive several additional benefits, including increased zombie rewards, increased ammunition pickups, faster weapon skill progression, weapon saving and access to protection zone teleports.
+### 📦 Weapon Depot
 
-Premium players also receive an hourly payday based on their current progression.
+- Permanent unlock through the Coin Shop
+- Weapon storage
+- Ammunition storage
+- Retrieval of stored equipment
 
-## 📦 Weapon Depot
+### 👕 Character Skins
 
-The Weapon Depot can be permanently unlocked through the Coin Shop.
+- Purchasable GTA:SA character skins
+- Bonus Point-based skin purchases
+- Special Zombie Skin available through the Coin Shop
 
-It allows players to store weapons and ammunition and retrieve them again later.
+### 🎮 Additional Gameplay Systems
 
-## 👕 Skin System
+- News system
+- Offline messages
+- Custom weather and time system
 
-Players can purchase character skins through the Skin Shop using Bonus Points.
+### 🛡️ Administration
 
-A separate Zombie Skin can be purchased through the Coin Shop and activated directly through the inventory.
+- Administration system
+- Server management functionality
 
-## 📊 Toplist
+### 🖥️ User Interface
 
-The gamemode includes a Toplist where players can compare different progression values and statistics.
+- Custom HUD
+- Scoreboard
+- Notifications and infoboxes
+- Help menu
 
-Tracked values include Level, Zombie Kills, Bonus Points, Coins, Trophies and Money.
-
-## 🎲 Additional Systems
-
-Redfield Apocalypse includes several additional systems beyond the main zombie survival gameplay:
-
-* Custom HUD and scoreboard
-* Custom notifications and infoboxes
-* Weapon shops
-* Skin shop
-* Coin shop
-* Payday system
-* Inventory system
-* Weapon Depot
-* Weapon skills
-* Vehicle system
-* Carhouse
-* Team system
-* House system
-* Achievement system
-* Toplist
-* News system
-* Offline messages
-* Help menu
-* Administration system
-* Custom weather and time system
+---
 
 ## ⚙️ Installation
 
-1. Place `RedfieldApocalypse` inside your MTA server's `resources` directory.
-2. Create/import the required database tables.
-3. Configure the database connection for your environment (sMain.lua).
-4. Start the resource on your MTA server.
+### Requirements
+
+- Multi Theft Auto: San Andreas server
+- MySQL database
+
+### Setup
+
+**1. Download the repository**
+
+Clone the repository or download the source code.
+
+**2. Install the resource**
+
+Place the gamemode inside your MTA server's `resources` directory.
+
+```text
+resources/
+└── RedfieldApocalypse/
+```
+
+**3. Set up the database**
+
+Create a MySQL database and import or create the required database tables.
+
+**4. Configure the database connection**
+
+Open the following file:
+
+```text
+sMain.lua
+```
+
+Update the database connection settings to match your server environment.
+
+**5. Start the resource**
+
+Start the gamemode using your MTA server console.
+
+```text
+start RedfieldApocalypse
+```
+
+**6. Verify the installation**
+
+Check the server console for errors and ensure that the database connection and required systems are functioning correctly.
+
+---
 
 ## 🎬 Media
 
-* https://youtu.be/lZjxwyfTO1A
+- **[Watch Gameplay on YouTube](https://youtu.be/lZjxwyfTO1A)**
+
+### Screenshots
+
+A collection of screenshots showcasing the gamemode's survival mechanics, interfaces and gameplay features.
 
 <p align="center">
   <img src="Screenshots/1.png" width="350">
   <img src="Screenshots/2.png" width="350">
-  <img src="Screenshots/3.png" width="350">   
+  <img src="Screenshots/3.png" width="350">
   <img src="Screenshots/4.png" width="350">
   <img src="Screenshots/5.png" width="350">
-  <img src="Screenshots/6.png" width="350">   
+  <img src="Screenshots/6.png" width="350">
+</p>
+
+<details>
+<summary><b>View More Screenshots</b></summary>
+
+<p align="center">
   <img src="Screenshots/7.png" width="350">
   <img src="Screenshots/8.png" width="350">
   <img src="Screenshots/9.png" width="350">
   <img src="Screenshots/10.png" width="350">
-  <img src="Screenshots/11.png" width="350">   
+  <img src="Screenshots/11.png" width="350">
 </p>
 
-## 📊 Statistics
+</details>
 
-| Category           | Amount |
-| ------------------ | -----: |
-| LUA files          |      55 |
-| other files        |      95 |
-| functions          |      254 |
-| lines              |      3890 |
-| characters         |      169998 |
-| comment-lines      |      63 |
-| comment-characters |      1230 |
+---
+
+## 📊 Project Statistics
+
+| Metric | Count |
+|---|---:|
+| Lua Files | 55 |
+| Additional Files | 95 |
+| Functions | 254 |
+| Lines | 3,890 |
+| Characters | 169,998 |
+| Comment Lines | 63 |
+| Comment Characters | 1,230 |
